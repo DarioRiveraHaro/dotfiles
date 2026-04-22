@@ -1,4 +1,4 @@
-1. El concepto básico
+### 1. El concepto básico
 Los "dotfiles" son los archivos de configuración que empiezan con un punto (como .bashrc, .zshrc, .vimrc). Normalmente viven en tu carpeta personal ($HOME).
 
 2. ¿Cómo hacerlo? (El método simple)
