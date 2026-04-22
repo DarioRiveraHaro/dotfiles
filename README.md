@@ -1,15 +1,15 @@
 # 1. El concepto básico
 Los "dotfiles" son los archivos de configuración que empiezan con un punto (como .bashrc, .zshrc, .vimrc). Normalmente viven en tu carpeta personal ($HOME).
 
-2. ¿Cómo hacerlo? (El método simple)
+# 2. ¿Cómo hacerlo? (El método simple)
 Existen herramientas complejas, pero para empezar, lo mejor es usar un repositorio de Git y enlaces simbólicos (symlinks).
 
-Paso A: Crear el repositorio en GitHub
+# Paso A: Crear el repositorio en GitHub
 Crea un repositorio nuevo (público o privado) llamado dotfiles.
 
 En tu computadora principal, crea una carpeta: mkdir ~/dotfiles.
 
-Paso B: Organizar y "Mover" tus archivos
+# Paso B: Organizar y "Mover" tus archivos
 En lugar de dejar los archivos en el HOME, los moveremos a la carpeta del repo y crearemos un "acceso directo" hacia afuera.
 
 Bash
@@ -18,7 +18,8 @@ mv ~/.bashrc ~/dotfiles/bashrc
 
 # Crear el enlace simbólico (el puente)
 ln -s ~/dotfiles/bashrc ~/.bashrc
-Paso C: Subir a GitHub
+
+# Paso C: Subir a GitHub
 Bash
 cd ~/dotfiles
 git init
